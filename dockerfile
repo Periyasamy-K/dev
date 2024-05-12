@@ -7,4 +7,4 @@ RUN unzip applight.zip
 RUN cp -rvf applight/* .
 RUN rm -rf applight applight.zip
 CMD [/usr/sbin/httpd, -D, FOREGROUND]
-EXPOSE 80
+EXPOSE 80, 22
